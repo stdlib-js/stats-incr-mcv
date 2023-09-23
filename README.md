@@ -89,7 +89,7 @@ The [coefficient of variation][coefficient-of-variation] (also known as **relati
 ## Usage
 
 ```javascript
-import incrmcv from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mcv@esm/index.mjs';
+import incrmcv from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mcv@v0.1.0-esm/index.mjs';
 ```
 
 #### incrmcv( window\[, mean] )
@@ -167,7 +167,7 @@ cv = accumulator();
 <script type="module">
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import incrmcv from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mcv@esm/index.mjs';
+import incrmcv from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mcv@v0.1.0-esm/index.mjs';
 
 var accumulator;
 var v;
