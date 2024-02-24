@@ -89,6 +89,11 @@ The [coefficient of variation][coefficient-of-variation] (also known as **relati
 ## Usage
 
 ```javascript
+import incrmcv from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mcv@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-incr-mcv/tags). For example,
+
+```javascript
 import incrmcv from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mcv@v0.2.1-esm/index.mjs';
 ```
 
@@ -167,7 +172,7 @@ cv = accumulator();
 <script type="module">
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import incrmcv from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mcv@v0.2.1-esm/index.mjs';
+import incrmcv from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mcv@esm/index.mjs';
 
 var accumulator;
 var v;
