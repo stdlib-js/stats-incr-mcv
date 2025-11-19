@@ -71,10 +71,14 @@ The [coefficient of variation][coefficient-of-variation] (also known as **relati
 
 <!-- <equation class="equation" label="eq:coefficient_of_variation" align="center" raw="c_v = \frac{s}{\bar{x}}" alt="Equation for the coefficient of variation (CV)."> -->
 
-<div class="equation" align="center" data-raw-text="c_v = \frac{s}{\bar{x}}" data-equation="eq:coefficient_of_variation">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@eed6b690d7c37249b04544b3f5fd36ad8eb3187f/lib/node_modules/@stdlib/stats/incr/mcv/docs/img/equation_coefficient_of_variation.svg"Equation for the coefficient of variation (CV).">
+```math
+c_v = \frac{s}{\bar{x}}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="c_v = \frac{s}{\bar{x}}" data-equation="eq:coefficient_of_variation">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@eed6b690d7c37249b04544b3f5fd36ad8eb3187f/lib/node_modules/@stdlib/stats/incr/mcv/docs/img/equation_coefficient_of_variation.svg" alt="Equation for the coefficient of variation (CV).">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -82,38 +86,32 @@ The [coefficient of variation][coefficient-of-variation] (also known as **relati
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-incr-mcv
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-incrmcv = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mcv@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var incrmcv = require( 'path/to/vendor/umd/stats-incr-mcv/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mcv@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.incrmcv;
-})();
-</script>
+var incrmcv = require( '@stdlib/stats-incr-mcv' );
 ```
 
 #### incrmcv( window\[, mean] )
@@ -184,14 +182,9 @@ cv = accumulator();
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mcv@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var incrmcv = require( '@stdlib/stats-incr-mcv' );
 
 var accumulator;
 var v;
@@ -206,11 +199,6 @@ for ( i = 0; i < 100; i++ ) {
     accumulator( v );
 }
 console.log( accumulator() );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -314,13 +302,13 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/incr/cv]: https://github.com/stdlib-js/stats-incr-cv/tree/umd
+[@stdlib/stats/incr/cv]: https://github.com/stdlib-js/stats-incr-cv
 
-[@stdlib/stats/incr/mmean]: https://github.com/stdlib-js/stats-incr-mmean/tree/umd
+[@stdlib/stats/incr/mmean]: https://github.com/stdlib-js/stats-incr-mmean
 
-[@stdlib/stats/incr/mstdev]: https://github.com/stdlib-js/stats-incr-mstdev/tree/umd
+[@stdlib/stats/incr/mstdev]: https://github.com/stdlib-js/stats-incr-mstdev
 
-[@stdlib/stats/incr/mvmr]: https://github.com/stdlib-js/stats-incr-mvmr/tree/umd
+[@stdlib/stats/incr/mvmr]: https://github.com/stdlib-js/stats-incr-mvmr
 
 <!-- </related-links> -->
 
